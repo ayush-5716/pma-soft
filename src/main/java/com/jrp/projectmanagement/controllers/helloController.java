@@ -29,7 +29,7 @@ public class helloController {
     employeeRepository empRepo;
 
 
-    @GetMapping("/live")
+    @GetMapping("/")
     public String hello(Model model) throws JsonProcessingException{
         List<stageCount> projects = proRepo.stageCnt();
         model.addAttribute("projects", projects);
